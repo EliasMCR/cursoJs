@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.alert("Bem vindo a calculadora de IMC")
+        var nome = window.prompt("digite seu nome: ")
+        var peso = Number(window.prompt(`Agora ${nome} digite seu peso:`))
+        var altura = Number(window.prompt('Qual sua altura?:'))
+        var calculo = (peso / altura) ** 2
+        document.write(`<h2> Seu IMC é de ${calculo} </h2><br>`)
+    </script>
+</body>
+</html>
