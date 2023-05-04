@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <style>
+        h1 {
+            text-align: center;
+            background-color: rgb(16, 175, 238);
+        }
+         #calculadora {
+            background-color: blue;
+           color: white;
+           width: 400px;
+            padding-bottom: 10px;
+        }
+        #calculadora > input {
+            background: rgb(11, 255, 255);
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 10px;
+            width: 50px;
+        }
+        #calculadora > input[type="submit"] {
+            background: brown;
+            color: white;
+        }
+        #calculadora > input[type="submit"]:hover {
+            background-color: green;
+            width: 55px;
+        }
+
+        #resultado {
+            background-color: aqua;
+            width: 400px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="calculadora">
+        <h1>Calcule seu índice de massa corporal</h1>
+        <label for="ipeso">Peso</label>
+        <input type="number" name="peso" id="ipeso">
+        <label for="ialtura">Altura</label>
+        <input type="number" name="altura" id="ialtura">
+        <input type="submit" value="Somar" onclick="imc()">
+    </div>
+    <div id="resultado">Resultado:</div>
+
+    <script>
+        function imc() {
+            var peso = window.document.getElementById('ipeso')
+            var altura = window.document.getElementById('ialtura')
+            var result = window.document.getElementById('resultado')
+            var n1 = Number(peso.value)
+            var n2 = Number(altura.value)
+            var s = n1 / (n2 * n2)
+
+            result.innerHTML = `Seu IMC é de ${s.toFixed(1)}`
+        }
+    </script>
+
+</body>
+</html>
