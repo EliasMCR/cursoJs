@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições de váriaveis</title>
+</head>
+<body>
+    <h1>Digite sua velociade</h1>
+    <input type="number" name="km" id="ikm">
+    <input type="button" value="conferir" onclick="imc()">
+    <div id="resu">Resultado:</div>
+
+    <script>
+        function imc() {
+            var km = window.document.querySelector('input#ikm')
+            var n1 = Number(km.value)
+            var bottom = window.document.querySelector('div#resu')
+           // bottom.innerHTML = `Sua velocidade é de ${n1}`
+            if (n1 > 80) {
+                bottom.innerText = 'MULTADO'
+            } else {
+                bottom.innerText = 'Dentro da velocidade'
+            }
+        }
+    </script>
+</body>
+</html>
