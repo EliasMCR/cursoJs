@@ -1,36 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vamos contar</title>
+    <title>Super contador</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="scripts/script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Vamos contar</h1>
-    </header>
-    <section>
-        <div id="inicio">
-            <label for="ib1">Inicío</label>
-            <input type="number" name="b1" id="ib1" placeholder="Onde o num deve iniciar?...">
+    <h1>Vamos contar</h1>
+    <section id="container">
+        <div>
+            <label for="iinicio">Inicio:</label>
+            <input type="number" name="inicio" id="iinicio">
         </div>
-        <div id="fim">
-            <label for="ib2">Fim</label>
-            <input type="number" name="b2" id="ib2" placeholder="Término num..">
+        <div>
+            <label for="ifim">Fim:</label>
+            <input type="number" name="fim" id="ifim">
         </div>
-        <div id="Passo">
-            <label for="ib3">Passo</label>
-            <input type="number" name="b3" id="ib3" placeholder="Pulo de num">
-
-            <input type="button" value="Contar" onclick="soma()">
+        <div>
+            <label for="ipasso">Passo:</label>
+            <input type="number" name="passo" id="ipasso">
         </div>
-        <div id="contagem">Preparando contagem...</div>
+        <div><input type="button" value="Contar" onclick="contar()"></div>
+        <div id="result">Resultado...</div>
     </section>
-    <footer>
-        <p>&copy; Curso em video</p>
-    </footer>
+    <script src="js/script"></script>
 </body>
 </html>

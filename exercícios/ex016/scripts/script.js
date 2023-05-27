@@ -1,12 +1,11 @@
-function soma(){
-    var nn1 = document.getElementById('ib1')
-    var nn2 = document.getElementById('ib2')
-    var nn3 = document.getElementById('ib3')
-    var res = document.getElementById('contagem')
+function contar() {
+    var ini = document.getElementById('iinicio')
+    var fim = document.getElementById('ifim')
+    var passo = document.getElementById('ipasso')
 
-    if (nn1.value.length == 0 || nn2.value.lenght == 0 || nn3.value.lenght == 0){
-        window.alert('As caixas precisam ser preeenchidas')
+    if(ini.value,length == 0 || fim.value.lenght == 0 || passo.value.lenght == 0) {
+        window.alert('Os campos devem ser preenchidos')
     } else {
-        window.alert('Tudo certo')
+        window.alert('Tudo ok')
     }
-}
+    }
